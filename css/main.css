@@ -129,7 +129,7 @@ a {
   background-image: url(../img/banner.png);
   height: 500px;
   background-position: center;
-  background-size: 95%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -138,6 +138,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .container .content aside ul {
@@ -172,8 +173,8 @@ a {
 
 .container .content ul.productList li.card {
   position: relative;
-  margin: 0 0 10px 20px;
-  width: 295px;
+  width: 300px;
+  margin-left: 15px;
 }
 
 .container .content ul.productList li.card p {
@@ -186,6 +187,10 @@ a {
   border: 1px solid #EAF0ED;
   padding: 15px 11px 15px 14px;
   margin-left: 65px;
+}
+
+.container .content ul.productList li.card:nth-of-type(even) {
+  margin-left: 20px;
 }
 
 .container .content ul.productList li.card button {
