@@ -77,9 +77,10 @@ a {
 
     //content
     .content {
-        margin-top: 10px;
+        margin-top: 60px;
         display: flex;
         margin-bottom: 10px;
+
         // aside
         aside ul {
             text-align: center;
@@ -108,82 +109,96 @@ a {
         ul.productList {
             display: flex;
             flex-wrap: wrap;
+
             li.card {
                 position: relative;
                 width: 300px;
                 margin-left: 15px;
-                p {
-                    font-size: 20px;
+                margin-bottom: 20px;
+                img{
+                    vertical-align: middle;
+                }
+                span {
+                    text-align: center;
                     color:#3F5D45;
-                    padding: 15px 0px 15px 30px;
-
-                    span {
+                    display: inline-block;
+                    font-weight: 800;
+                    padding: 14px 0;
+                    &:nth-of-type(1){ 
+                        width: 166px;
+                    }
+                    &:nth-of-type(2){
+                        width: 127px;
                         border: 1px solid #EAF0ED;
-                        padding: 15px 11px 15px 14px;
-                        margin-left: 65px;
                     }
                 }
-                &:nth-of-type(even){
-                    margin-left: 20px;
-                }
-                button {
-                    border: none;
-                    background-color: #EAF0ED;
-                    color: #3F5D45;
-                    width: 100%;
-                    text-align: center;
-                    padding: 15px 0;
-                    font-size: 24px;
-                    font-weight: 900;
-                    cursor: pointer;
-                }
-
                 &::before {
                     content: '本日精選';
                     width: 20px;
                     height: 80px;
                     position: absolute;
-                    top:0;
+                    top: 0;
                     left: 15px;
                     background-color: #3F5D45;
-                    color:#EAF0ED;
+                    color: #EAF0ED;
                     text-align: center;
                     padding: 15px 5px 0 5px;
                 }
-                &::after{
-                    content:url(../img/favorite_border.png);
+    
+                &::after {
+                    content: url(../img/favorite_border.png);
                     // background-image: url(../img/favorite_border.png);
                     // width: 50px;
                     // height: 50px;
                     position: absolute;
-                    top:10px;
-                    right:15px;
+                    top: 10px;
+                    right: 15px;
                     cursor: pointer;
                 }
             }
+
+            &:nth-of-type(even) {
+                margin-left: 20px;
+            }
+
+            button {
+                border: none;
+                background-color: #EAF0ED;
+                color: #3F5D45;
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+                font-size: 24px;
+                font-weight: 900;
+                cursor: pointer;
+            }
         }
     }
+}
 
-    // pagination
-    ul.pagination{
-        display:flex;
-        justify-content: end;
-        li{
-            a{
-                width: 60px;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img{
-                    width: 24px;
-                }
+// pagination
+ul.pagination {
+    display: flex;
+    justify-content: end;
+
+    li {
+        a {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 24px;
             }
-            &:nth-of-type(2){
-                background-color: #3F5D45;
-                a{
-                    color:#EAF0ED;
-                }
+        }
+
+        &:nth-of-type(2) {
+            background-color: #3F5D45;
+
+            a {
+                color: #EAF0ED;
             }
         }
     }

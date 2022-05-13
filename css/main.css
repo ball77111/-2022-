@@ -134,7 +134,7 @@ a {
 }
 
 .container .content {
-  margin-top: 10px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,34 +175,28 @@ a {
   position: relative;
   width: 300px;
   margin-left: 15px;
+  margin-bottom: 20px;
 }
 
-.container .content ul.productList li.card p {
-  font-size: 20px;
-  color: #3F5D45;
-  padding: 15px 0px 15px 30px;
+.container .content ul.productList li.card img {
+  vertical-align: middle;
 }
 
-.container .content ul.productList li.card p span {
-  border: 1px solid #EAF0ED;
-  padding: 15px 11px 15px 14px;
-  margin-left: 65px;
-}
-
-.container .content ul.productList li.card:nth-of-type(even) {
-  margin-left: 20px;
-}
-
-.container .content ul.productList li.card button {
-  border: none;
-  background-color: #EAF0ED;
-  color: #3F5D45;
-  width: 100%;
+.container .content ul.productList li.card span {
   text-align: center;
-  padding: 15px 0;
-  font-size: 24px;
-  font-weight: 900;
-  cursor: pointer;
+  color: #3F5D45;
+  display: inline-block;
+  font-weight: 800;
+  padding: 14px 0;
+}
+
+.container .content ul.productList li.card span:nth-of-type(1) {
+  width: 166px;
+}
+
+.container .content ul.productList li.card span:nth-of-type(2) {
+  width: 127px;
+  border: 1px solid #EAF0ED;
 }
 
 .container .content ul.productList li.card::before {
@@ -226,7 +220,23 @@ a {
   cursor: pointer;
 }
 
-.container ul.pagination {
+.container .content ul.productList:nth-of-type(even) {
+  margin-left: 20px;
+}
+
+.container .content ul.productList button {
+  border: none;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+ul.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +245,7 @@ a {
           justify-content: end;
 }
 
-.container ul.pagination li a {
+ul.pagination li a {
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -249,15 +259,15 @@ a {
           align-items: center;
 }
 
-.container ul.pagination li a img {
+ul.pagination li a img {
   width: 24px;
 }
 
-.container ul.pagination li:nth-of-type(2) {
+ul.pagination li:nth-of-type(2) {
   background-color: #3F5D45;
 }
 
-.container ul.pagination li:nth-of-type(2) a {
+ul.pagination li:nth-of-type(2) a {
   color: #EAF0ED;
 }
 /*# sourceMappingURL=main.css.map */
