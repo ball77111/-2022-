@@ -58,19 +58,11 @@ img {
   width: 100%;
 }
 
-p {
-  font-weight: 900;
-}
-
 a {
   color: #3F5D45;
   display: block;
   text-decoration: none;
   font-weight: 900;
-}
-
-.active {
-  background-color: #EAF0ED;
 }
 
 .container {
@@ -125,6 +117,10 @@ a {
   margin-right: 20px;
 }
 
+.container nav.header a:hover {
+  background-color: #EAF0ED;
+}
+
 .container .banner {
   background-image: url(../img/banner.png);
   height: 500px;
@@ -141,6 +137,14 @@ a {
   margin-bottom: 10px;
 }
 
+.container .content aside h3 {
+  background-color: #3F5D45;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 24px;
+  color: #EAF0ED;
+}
+
 .container .content aside ul {
   text-align: center;
   font-size: 24px;
@@ -151,16 +155,12 @@ a {
   width: 300px;
 }
 
-.container .content aside ul li:nth-of-type(1) {
-  background-color: #3F5D45;
-}
-
-.container .content aside ul li:nth-of-type(1) a {
-  color: #EAF0ED;
-}
-
-.container .content aside ul a {
+.container .content aside ul li a {
   padding: 20px 0px;
+}
+
+.container .content aside ul li a:hover {
+  background-color: #EAF0ED;
 }
 
 .container .content ul.productList {
@@ -191,7 +191,7 @@ a {
 }
 
 .container .content ul.productList li.card span:nth-of-type(1) {
-  width: 166px;
+  width: calc(300px - 136px);
 }
 
 .container .content ul.productList li.card span:nth-of-type(2) {
@@ -257,6 +257,7 @@ ul.pagination li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #EAF0ED;
 }
 
 ul.pagination li a img {

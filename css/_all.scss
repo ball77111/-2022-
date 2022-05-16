@@ -7,19 +7,13 @@ img {
     width: 100%;
 }
 
-p {
-    font-weight: 900;
-}
+
 
 a {
     color: #3F5D45;
     display: block;
     text-decoration: none;
     font-weight: 900;
-}
-
-.active {
-    background-color: #EAF0ED;
 }
 
 .container {
@@ -63,6 +57,9 @@ a {
 
         a {
             margin-right: 20px;
+            &:hover{
+                background-color: #EAF0ED;
+            }
         }
     }
 
@@ -80,28 +77,33 @@ a {
         margin-top: 60px;
         display: flex;
         margin-bottom: 10px;
+        
 
         // aside
-        aside ul {
-            text-align: center;
-            font-size: 24px;
-
-            li {
-                border: 1px solid #EAF0ED;
-                width: 300px;
-
-                &:nth-of-type(1) {
-                    background-color: #3F5D45;
-
+        aside {
+            h3 {
+                background-color: #3F5D45;
+                padding: 20px 0px;
+                text-align: center;
+                font-size: 24px;
+                color:#EAF0ED;
+            }
+            ul {
+                text-align: center;
+                font-size: 24px;
+                li {
+                    border: 1px solid #EAF0ED;
+                    width: 300px;
                     a {
-                        color: #EAF0ED;
+                        padding: 20px 0px;
+                    &:hover{
+                        background-color: #EAF0ED;
+                    }
                     }
                 }
             }
 
-            a {
-                padding: 20px 0px;
-            }
+
 
         }
 
@@ -115,23 +117,28 @@ a {
                 width: 300px;
                 margin-left: 15px;
                 margin-bottom: 20px;
-                img{
+
+                img {
                     vertical-align: middle;
                 }
+
                 span {
                     text-align: center;
-                    color:#3F5D45;
+                    color: #3F5D45;
                     display: inline-block;
                     font-weight: 800;
                     padding: 14px 0;
-                    &:nth-of-type(1){ 
-                        width: 166px;
+
+                    &:nth-of-type(1) {
+                        width:calc(300px - 136px);
                     }
-                    &:nth-of-type(2){
+
+                    &:nth-of-type(2) {
                         width: 127px;
                         border: 1px solid #EAF0ED;
                     }
                 }
+
                 &::before {
                     content: '本日精選';
                     width: 20px;
@@ -144,7 +151,7 @@ a {
                     text-align: center;
                     padding: 15px 5px 0 5px;
                 }
-    
+
                 &::after {
                     content: url(../img/favorite_border.png);
                     // background-image: url(../img/favorite_border.png);
@@ -188,7 +195,7 @@ ul.pagination {
             display: flex;
             justify-content: center;
             align-items: center;
-
+            border: 1px solid #EAF0ED;
             img {
                 width: 24px;
             }
